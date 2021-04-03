@@ -1,0 +1,19 @@
+﻿Build started 2/4/21 4:56:03 PM.
+     1>Project "C:\Users\User\Documents\Snacket Piffer\Snacket_Piffer\Snacket_Piffer\Snacket_Piffer\Snacket_Piffer.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\Users\User\Documents\Snacket Piffer\Snacket_Piffer\Snacket_Piffer\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\Snacket_Piffer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Snacket_Piffer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+     1>c1xx : fatal error C1083: Cannot open compiler intermediate file: 'Debug\Snacket_Piffer.pch': No such file or directory
+     1>FileTracker : error FTK1011: could not create the new file tracking log file: C:\Users\User\Documents\Snacket Piffer\Snacket_Piffer\Snacket_Piffer\Snacket_Piffer\Debug\CL.read.1.tlog. The system cannot find the file specified.
+         
+         
+         
+     1>Done Building Project "C:\Users\User\Documents\Snacket Piffer\Snacket_Piffer\Snacket_Piffer\Snacket_Piffer\Snacket_Piffer.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.96
