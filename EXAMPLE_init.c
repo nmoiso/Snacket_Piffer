@@ -1,3 +1,6 @@
+// EXAMPLE CODE
+// introduces Winsock programming on Windows
+// Source: https://www.binarytides.com/winsock-socket-programming-tutorial/
 #include <winsock2.h>
 #include <windows.h>
 #include <ws2tcpip.h>
@@ -21,7 +24,7 @@ int main(int argc , char *argv[])
 
 	printf("\nInitialising Winsock...");
 	if (WSAStartup(MAKEWORD(2,2),&wsa) != 0)
-	{
+	{ 
 		printf("Initialisation failed. Error Code : %d \n",WSAGetLastError());
 		return 1;
 	}
@@ -39,7 +42,7 @@ int main(int argc , char *argv[])
 
 	//Connect to server
 
-	server.sin_addr.s_addr = inet_addr("192.168.20.19");
+	server.sin_addr.s_addr = inet_addr("192.168.000.000"); // Used personal IP address of home network 
 	server.sin_family = AF_INET;
 	server.sin_port = htons( 2000 );
 
@@ -50,21 +53,7 @@ int main(int argc , char *argv[])
 
 	printf("Successfully connected to server :D \n");
 
-	//while(1)
-	//{
-	//	saddr_size = sizeof saddr;
-	//	data_size = recvfrom(s , buffer , 65536 , 0 , &saddr , &saddr_size);
-	//	ProcessPacket(buffer, data_size);
-	//}
-
-	//close(s);
-	//printf("Done");
+	// Code fails to connect to personal server
 
 	return 0;
 }
-
-//void ProcessPacket(unsigned char* buffer, int size){
-//	struct iphdr *iph = (struct iphdr*)buffer;
-//	++total;
-
-//}
